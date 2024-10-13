@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Make sure this URL points to the correct backend URL (running on port 5000)
-const API_URL = 'profile-to-map.vercel.app';
+const API_URL = 'http://localhost:5000/api';
 
 export const getProfiles = async () => {
   const response = await axios.get(`${API_URL}/profiles`);
